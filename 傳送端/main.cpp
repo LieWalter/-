@@ -58,8 +58,8 @@ int main()
     file.open("2.txt",ios::out);            //產生訊息檔案與加密訊息摘要檔案
     file<<c;
     file.close();
-    rename("./1.txt","../6/1.txt");
-    rename("./2.txt","../6/2.txt");
+    rename("./1.txt","../接收端/1.txt");
+    rename("./2.txt","../接收端/2.txt");
     file.open("1.txt", ios::out);
     file.write(a,1000);
     file.close();
