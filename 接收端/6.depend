@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1414089628 source:c:\users\qappl\desktop\6\src\md5.cpp
+	"md5.h"
+
+1414089628 c:\users\qappl\desktop\6\src\md5.h
+	<string>
+	<cstring>
+
+1623846783 source:c:\users\qappl\desktop\6\main.cpp
+	<iostream>
+	<fstream>
+	<time.h>
+	<stdlib.h>
+	<windows.h>
+	"./src/md5.h"
+
