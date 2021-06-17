@@ -44,14 +44,16 @@ int main()
                 continue;
             }
             else {z++;break;}
-        }
-    }
+        }cout<<a[i];
+    }cout<<endl<<"大寫英文："<<Z<<" 小寫英文："<<z<<" 數字："<<m<<endl;
     string b(a),c,key;
     b = b.substr(0,b.length()-4);
+    c=printMD5(b);                          //訊息摘要
+    cout<<"訊息摘要："<<c<<endl;
     cout<<"key:";                           //輸入加密金鑰
     cin>>key;
-    c=printMD5(b);                          //訊息摘要
     c+=key;                                 //加密訊息摘要
+    cout<<"加密訊息摘要："<<c<<endl;
     file.open("1.txt", ios::out);
     file.write(a,1000);
     file.close();
